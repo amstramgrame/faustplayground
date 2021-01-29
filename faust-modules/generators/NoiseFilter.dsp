@@ -4,7 +4,7 @@ process = vgroup("Noise Filter", noiseFilter);
 
 noiseFilter = noise : lowPass : *(volume) : onOff;
 
-onOff = *(checkbox("[1]On / Off[switch:1]"): si.smooth(0.998));
+onOff = *(button("[1]On / Off[switch:1]"): si.smooth(0.998));
 
 //--- Noise Generator ---
 random  = +(12345)~*(1103515245);

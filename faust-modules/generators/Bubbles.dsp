@@ -44,5 +44,5 @@ bubble(f0,trig) = os.osc(f) * (exp(-damp*time) : si.smooth(0.99))
 time = hslider("time[hidden:1][acc:1 1 -10 0 10]", 24000, 3000, 48000, 100);
 timer = ba.pulse(time);
 
-process =  bubble(hslider("v:bubble/freq[hidden:1][acc: 0 0 -10 0 10]", 600, 150, 2000, 1), checkbox("drop[switch:1]")*timer);
+process =  bubble(hslider("v:bubble/freq[hidden:1][acc: 0 0 -10 0 10]", 600, 150, 2000, 1), button("drop[switch:1]")*timer);
 

@@ -31,6 +31,6 @@ hihat = no.noise*envgainHihat*0.7 : fi.resonbp(5925, 1, 1);
 percus = hslider("v:Percsounds/[0]Sound[style:menu{'kick':0;'snare':1;'hihat':2}][knob:2]", 0, 0, 2, 1);
 percu = kick, snare, hihat : ba.selectn(3, percus);
 
-gate = checkbox("v:Percsounds/[2]On/Off[switch:1]");
+gate = button("v:Percsounds/[2]On/Off[switch:1]");
 
 process = percu;

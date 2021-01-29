@@ -1,6 +1,6 @@
 import ("stdfaust.lib");
 
-gate = checkbox("v:Birds/[0]On/Off[switch:1]");
+gate = button("v:Birds/[0]On/Off[switch:1]");
 g = hslider("v:Birds/[3]Gain[hidden:1]", 0.5, 0, 1, 0.01);
 
 

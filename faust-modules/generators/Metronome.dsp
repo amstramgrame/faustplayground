@@ -19,7 +19,7 @@ envelope = en.asr(a,s,r,gate) with{
 
 volume = 0.1;
 
-onOff = checkbox("[1]ON/OFF[switch: 1]");
+onOff = button("[1]ON/OFF[switch: 1]");
 
  /* --------------------- Pulse -----------------------*/
 

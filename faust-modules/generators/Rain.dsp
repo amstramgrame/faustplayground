@@ -24,4 +24,4 @@ rain(density,level) = no.noise*0.5 <: par(i, 2, drop) : par(i, 2, *(level))
 process  =  rain (
                 hslider("v:rain/density[acc: 0 0 -10 0 10][hidden:1]", 300, 0, 1000, 1) / 1000,
                 hslider("v:rain/volume[acc:1 0 -10 0 10][hidden:1]", 0.5, 0, 1, 0.01)
-            ):>*(1)*checkbox("v:rain/On/Off[switch:1]");
+            ):>*(1)*button("v:rain/On/Off[switch:1]");
