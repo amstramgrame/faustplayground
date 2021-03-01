@@ -1,27 +1,22 @@
-declare btmidi_device_name "Gramophone 6";
-declare btmidi_remote_name "BBC micro:bit [gogoz]";
+declare name "Metronome";
+declare name "Joseph Bizien";
 
-declare author "Elodie RABIBISOA";
-declare name "Bip bip";
+// Move from right to left along the x axis to increase speed
 
 import("stdfaust.lib");
 
-process = vgroup("Metronome", (bip * envelope) : _ * volume * onOff) : min(1) : max(-1) ;
-//fruq = hslider("F", 500, 500, 2000, 0.01);
+process = vgroup("Metronome", (bip * envelope) : _ * volume) : min(1) : max(-1) ;
 bip = os.osc(230); // Bip's height in Hz;
 
 envelope = en.asr(a,s,r,gate) with{
   a = 0.01; //in seconds
   s = 90; //percentage of gain
   r = 0.02;//in seconds
-  //gate = pulse
 };
 
 volume = 0.1;
 
-onOff = button("[1]ON/OFF[switch: 1]");
-
- /* --------------------- Pulse -----------------------*/
+/* --------------------- Pulse -----------------------*/
 
 gate = phasor_bin(1) :-(0.001):pulsar;
 ratio_env = (0.15);

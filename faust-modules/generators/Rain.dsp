@@ -1,18 +1,8 @@
-//----------------------rain--------------------------
-// A very simple rain simulator
-//
-// #### Usage
-//
-// 
-//  rain(d,l) : _,_
-// 
-//
-// Where:
-//
-// * d: is the density of the rain: between 0 and 1
-// * l: is the level (volume) of the rain: between 0 and 1
-//
-//----------------------------------------------------------
+declare name "Rain";
+declare author "Joseph Bizien";
+
+// Move from left to right along the x axis to increase density
+// Move from bottom to front along the y axis to increase volume 
 
 import("stdfaust.lib");
 
@@ -22,6 +12,7 @@ rain(density,level) = no.noise*0.5 <: par(i, 2, drop) : par(i, 2, *(level))
     };
 
 process  =  rain (
-                hslider("v:rain/density[acc: 0 0 -10 0 10][hidden:1]", 300, 0, 1000, 1) / 1000,
+                hslider("v:rain/density[acc: 0 0 -10 0 10][hidden:1]", 300, 1, 1000, 1) / 1000,
                 hslider("v:rain/volume[acc:1 0 -10 0 10][hidden:1]", 0.5, 0, 1, 0.01)
-            ):>*(1)*button("v:rain/On/Off[switch:1]");
+            ):>*(1);
+            

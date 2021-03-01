@@ -1,3 +1,8 @@
+declare name "Reverb";
+declare author "Joseph Bizien";
+
+// Turn knob 2 to increase the room size
+
 import ("stdfaust.lib");
 
 reverb = _<: (*(g)*fixedgain : re.mono_freeverb(combfeed, allpassfeed, damping, spatSpread)),
