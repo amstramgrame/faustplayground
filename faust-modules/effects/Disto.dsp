@@ -1,5 +1,4 @@
 declare name "Disto";
-declare author "Joseph Bizien";
 
 // Turn knob 2 to increase distortion
 

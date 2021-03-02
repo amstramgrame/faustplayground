@@ -1,5 +1,4 @@
 declare name "Lowpass";
-declare author "Joseph Bizien";
 
 import ("stdfaust.lib");
 

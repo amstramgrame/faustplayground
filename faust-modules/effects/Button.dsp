@@ -1,5 +1,4 @@
 declare name "Button";
-declare author "Joseph Bizien";
 
 // Press and hold switch 1 to play sound
 

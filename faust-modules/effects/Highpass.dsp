@@ -1,5 +1,4 @@
 declare name "Highpass";
-declare author "Joseph Bizien";
 
 // Turn knob 2 to cut low frequencies
 

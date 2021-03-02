@@ -1,5 +1,4 @@
 declare name "Flanger";
-declare author "Joseph Bizien";
 
 // Move from right to left along the x axis to increase frequency
 // Move from front to bottom along the y axis to increase depth

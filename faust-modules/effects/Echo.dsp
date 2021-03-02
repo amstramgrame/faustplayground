@@ -1,5 +1,4 @@
 declare name "Echo";
-declare author "Joseph Bizien";
 
 // Turn knob 2 to increase delay
 

@@ -1,5 +1,4 @@
 declare name "Drop";
-declare author "Joseph Bizien";
 
 // Move from right to left along the x axis to increase frequency
 // Move from front to bottom to increase speed

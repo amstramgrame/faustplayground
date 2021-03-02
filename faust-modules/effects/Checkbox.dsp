@@ -1,5 +1,4 @@
 declare name "Checkbox";
-declare author "Joseph Bizien";
 
 // Press switch 1 to play sound
 

@@ -1,5 +1,4 @@
 declare name "Metronome";
-declare name "Joseph Bizien";
 
 // Move from right to left along the x axis to increase speed
 
