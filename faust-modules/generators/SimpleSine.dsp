@@ -1,5 +1,4 @@
 declare name "SimpleSine";
-declare author "Joseph Bizien";
 
 // Move from left to right along the x axis to increase frequency
 // Move from bottom to front along the y axis to increase volume
