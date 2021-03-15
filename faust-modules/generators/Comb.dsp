@@ -1,7 +1,7 @@
 declare name "Comb";
 
-// Move from right to left along the x axis to increase feedback
-// Move from bottom to front along the y axis to increase delay
+//Move from left to right along the x axis to increase feedback
+//Move from bottom to front along the y axis to increase delay
 
 import("stdfaust.lib");
 

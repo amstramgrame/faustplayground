@@ -1,7 +1,7 @@
 declare name "Clarinet";
 
-// Move from right to left along the x axis to increase frequency
-// Turn knob 2 to increase blowing pressure (volume)
+//Move from left to right along the x axis to increase frequency
+//Turn knob 2 to increase blowing pressure (volume)
 
 import("stdfaust.lib");
 
